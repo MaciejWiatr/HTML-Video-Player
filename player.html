@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/player.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="video-contaier" id='pl'>
+        <video id='player'>
+            <source src="example_video.mp4">
+            
+        </video>
+        <div class="video-bar">
+            <div class="bar" id='bar'>
+                <div class="juice" id='juice'></div>
+            </div>
+            <div class="controlls">
+
+                <div class="sound">
+                    <div class="snd-ctrls">
+                        <button onclick="mute()"><i class="fas fa-volume-up" id='snd-btn'></i></button>
+                        <div id='elo'><input type="range" name="points" min="0" max="100" id='sound-ctrl'></div>
+                    </div>
+
+                </div>
+                <div class="playpause">
+                    
+                    <button id='back' onclick="back()"><i class="fas fa-step-backward"></i></button>
+                    <button id='play-but' onclick="playPause()"><i id='play-ico' class="fas fa-play"></i></button>
+                    <button id='forw' onclick="forw()"><i class="fas fa-step-forward"></i></button>
+                    
+                </div>
+
+
+
+                <div class="options-fsc">
+                    <button><i class="fas fa-cog"></i></button>
+                    <button id='fscbut' onclick="openFullscreen()"><i class="fas fa-compress"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/player.js"></script>
+</body>

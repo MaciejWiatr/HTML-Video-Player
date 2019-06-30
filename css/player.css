@@ -1,0 +1,76 @@
+.video-contaier {
+  position: relative;
+  width: 60%;
+  min-width: 450px;
+  overflow: hidden; }
+  .video-contaier video {
+    width: 100%; }
+  .video-contaier .video-bar {
+    position: absolute;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    width: 100%; }
+    .video-contaier .video-bar .bar {
+      height: 10px;
+      background-color: #303030;
+      width: 100%;
+      top: 0;
+      left: 0;
+      cursor: pointer; }
+      .video-contaier .video-bar .bar .juice {
+        height: 100%;
+        background: aqua; }
+    .video-contaier .video-bar .controlls {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 45px;
+      padding: 15px;
+      background-color: rgba(48, 48, 48, 0.5); }
+      .video-contaier .video-bar .controlls button {
+        border: 2px solid white;
+        border-radius: 35px;
+        text-align: center;
+        height: 45px;
+        width: 45px;
+        color: white;
+        background-color: rgba(48, 48, 48, 0.8);
+        -webkit-transition: -webkit-transform 0.1s ease-in-out;
+        transition: -webkit-transform 0.1s ease-in-out;
+        transition: transform 0.1s ease-in-out;
+        transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out; }
+      .video-contaier .video-bar .controlls button:hover {
+        color: aqua;
+        cursor: pointer;
+        border-color: aqua;
+        -webkit-box-shadow: 0px 0px 12px 0px #00e1ff;
+        box-shadow: 0px 0px 12px 0px #00e1ff;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+      .video-contaier .video-bar .controlls button:focus {
+        outline: none; }
+      .video-contaier .video-bar .controlls .playpause {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      .video-contaier .video-bar .controlls .sound {
+        width: 30%;
+        text-align: start; }
+      .video-contaier .video-bar .controlls .options-fsc {
+        width: 30%;
+        text-align: end; }
+      .video-contaier .video-bar .controlls .snd-ctrls {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between; }
+      .video-contaier .video-bar .controlls #elo {
+        width: 80%;
+        padding: 10px; }
+
+.video-contaier:hover > .video-bar {
+  -webkit-transform: translateY(-90px);
+  transform: translateY(-90px); }
+
+/*# sourceMappingURL=player.css.map */
